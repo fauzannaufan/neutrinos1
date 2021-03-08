@@ -1,0 +1,14 @@
+{
+    "appPageId": "735a184e-ed7a-fb2a-dae0-b8604cec68f2",
+    "appPageName": "simplepage",
+    "componentName": "simplepageComponent",
+    "selectorName": "bh-simplepage",
+    "htmlFileName": "simplepage.template.html",
+    "tsFileName": "simplepage.component.ts",
+    "createDate": "2021-03-08T09:20:22.225Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}
