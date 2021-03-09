@@ -2,12 +2,15 @@
     "displayName": "firstapp",
     "appName": "firstapp",
     "description": "First App",
-    "lastModified": "2021-03-08T09:19:51.824Z",
+    "lastModified": "2021-03-08T09:48:11.227Z",
     "imgSourcePath": "",
     "version": "1.0.0",
     "appType": "classic",
     "templateName": "blank",
     "createDate": "2021-03-08T09:19:50.596Z",
     "analyticsId": "15c24f1a-da31-c822-3524-719df5f6e9dd",
-    "createdStudioVersion": "7.7.0"
+    "createdStudioVersion": "7.7.0",
+    "username": "noufan@deltadatamandiri.com",
+    "organisationId": "neutrinos-training",
+    "appId": "6045f2dbb4ee9c0012cfa742"
 }

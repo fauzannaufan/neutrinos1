@@ -1,9 +1,22 @@
 {
     "routes": [
         {
+            "path": "home",
+            "component": "simplepageComponent"
+        },
+        {
+            "path": "expansion",
+            "component": "expansionpageComponent"
+        },
+        {
+            "path": "stepper",
+            "component": "stepperpageComponent"
+        },
+        {
             "path": "''",
-            "redirectTo": "",
-            "pathMatch": "full"
+            "redirectTo": "home",
+            "pathMatch": "full",
+            "default": true
         },
         {
             "path": "**",

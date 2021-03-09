@@ -15,6 +15,10 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-stepperpageComponent
+import { stepperpageComponent } from '../components/stepperpageComponent/stepperpage.component';
+//CORE_REFERENCE_IMPORT-expansionpageComponent
+import { expansionpageComponent } from '../components/expansionpageComponent/expansionpage.component';
 //CORE_REFERENCE_IMPORT-simplepageComponent
 import { simplepageComponent } from '../components/simplepageComponent/simplepage.component';
 
@@ -44,6 +48,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-stepperpageComponent
+stepperpageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-expansionpageComponent
+expansionpageComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-simplepageComponent
 simplepageComponent,
 
@@ -72,5 +80,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{ path: '', redirectTo: '/', pathMatch: 'full' }, { path: '**', component: PageNotFoundComponent }];
+export const appRoutes = [{path: 'home', component: simplepageComponent},{path: 'expansion', component: expansionpageComponent},{path: 'stepper', component: stepperpageComponent},{path: '', redirectTo: 'home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

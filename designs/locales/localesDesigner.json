@@ -3,6 +3,16 @@
         "localeId": "en",
         "localeName": "English",
         "isDefaultLanguage": true,
-        "properties": {}
+        "properties": {
+            "submit": "Submit"
+        }
+    },
+    "id": {
+        "localeId": "id",
+        "localeName": "Indonesian",
+        "isDefaultLanguage": false,
+        "properties": {
+            "submit": "Kirimkan"
+        }
     }
 }
