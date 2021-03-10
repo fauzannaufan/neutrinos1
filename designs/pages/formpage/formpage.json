@@ -1,0 +1,14 @@
+{
+    "appPageId": "aa4e36a4-8adb-f701-be55-27c8e02f179c",
+    "appPageName": "formpage",
+    "componentName": "formpageComponent",
+    "selectorName": "bh-formpage",
+    "htmlFileName": "formpage.template.html",
+    "tsFileName": "formpage.component.ts",
+    "createDate": "2021-03-09T06:06:08.279Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

@@ -4,14 +4,24 @@
         "componentName": "simplepageComponent",
         "createDate": "2021-03-08T09:20:22.225Z"
     },
-    "8ba3b826-352b-9448-80bf-adf1090a8603": {
-        "appPageName": "expansionpage",
-        "componentName": "expansionpageComponent",
-        "createDate": "2021-03-08T10:31:44.626Z"
+    "aa4e36a4-8adb-f701-be55-27c8e02f179c": {
+        "appPageName": "formpage",
+        "componentName": "formpageComponent",
+        "createDate": "2021-03-09T06:06:08.279Z"
     },
-    "3e1c4dfa-2fe3-fce7-5b59-6af64205bad9": {
-        "appPageName": "stepperpage",
-        "componentName": "stepperpageComponent",
-        "createDate": "2021-03-08T10:49:29.789Z"
+    "00e65c7f-38f0-32ac-d498-5eceaa611177": {
+        "appPageName": "tablepage",
+        "componentName": "tablepageComponent",
+        "createDate": "2021-03-09T07:17:51.797Z"
+    },
+    "2faa1eea-f5ba-fe67-d6b6-50814d191b6d": {
+        "appPageName": "chartpage",
+        "componentName": "chartpageComponent",
+        "createDate": "2021-03-09T07:27:28.896Z"
+    },
+    "9fe1e332-f9f2-e947-3ed3-83be9b6f5dad": {
+        "appPageName": "sidenav",
+        "componentName": "sidenavComponent",
+        "createDate": "2021-03-10T02:17:51.288Z"
     }
 }

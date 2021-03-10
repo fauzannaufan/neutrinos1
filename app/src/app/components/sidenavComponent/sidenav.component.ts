@@ -13,11 +13,11 @@ import { HeroService } from '../../services/hero/hero.service';
 */
 
 @Component({
-    selector: 'bh-expansionpage',
-    templateUrl: './expansionpage.template.html'
+    selector: 'bh-sidenav',
+    templateUrl: './sidenav.template.html'
 })
 
-export class expansionpageComponent extends NBaseComponent implements OnInit {
+export class sidenavComponent extends NBaseComponent implements OnInit {
 
     constructor() {
         super();

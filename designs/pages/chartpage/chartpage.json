@@ -1,0 +1,14 @@
+{
+    "appPageId": "2faa1eea-f5ba-fe67-d6b6-50814d191b6d",
+    "appPageName": "chartpage",
+    "componentName": "chartpageComponent",
+    "selectorName": "bh-chartpage",
+    "htmlFileName": "chartpage.template.html",
+    "tsFileName": "chartpage.component.ts",
+    "createDate": "2021-03-09T07:27:28.896Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

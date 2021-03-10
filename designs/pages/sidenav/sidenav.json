@@ -1,0 +1,14 @@
+{
+    "appPageId": "9fe1e332-f9f2-e947-3ed3-83be9b6f5dad",
+    "appPageName": "sidenav",
+    "componentName": "sidenavComponent",
+    "selectorName": "bh-sidenav",
+    "htmlFileName": "sidenav.template.html",
+    "tsFileName": "sidenav.component.ts",
+    "createDate": "2021-03-10T02:17:51.288Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

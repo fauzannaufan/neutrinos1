@@ -15,10 +15,14 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
-//CORE_REFERENCE_IMPORT-stepperpageComponent
-import { stepperpageComponent } from '../components/stepperpageComponent/stepperpage.component';
-//CORE_REFERENCE_IMPORT-expansionpageComponent
-import { expansionpageComponent } from '../components/expansionpageComponent/expansionpage.component';
+//CORE_REFERENCE_IMPORT-sidenavComponent
+import { sidenavComponent } from '../components/sidenavComponent/sidenav.component';
+//CORE_REFERENCE_IMPORT-chartpageComponent
+import { chartpageComponent } from '../components/chartpageComponent/chartpage.component';
+//CORE_REFERENCE_IMPORT-tablepageComponent
+import { tablepageComponent } from '../components/tablepageComponent/tablepage.component';
+//CORE_REFERENCE_IMPORT-formpageComponent
+import { formpageComponent } from '../components/formpageComponent/formpage.component';
 //CORE_REFERENCE_IMPORT-simplepageComponent
 import { simplepageComponent } from '../components/simplepageComponent/simplepage.component';
 
@@ -48,10 +52,14 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
-//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-stepperpageComponent
-stepperpageComponent,
-//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-expansionpageComponent
-expansionpageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-sidenavComponent
+sidenavComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-chartpageComponent
+chartpageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-tablepageComponent
+tablepageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-formpageComponent
+formpageComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-simplepageComponent
 simplepageComponent,
 
@@ -80,5 +88,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: simplepageComponent},{path: 'expansion', component: expansionpageComponent},{path: 'stepper', component: stepperpageComponent},{path: '', redirectTo: 'home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'home', component: simplepageComponent},{path: 'form', component: formpageComponent},{path: 'table', component: tablepageComponent},{path: 'chart', component: chartpageComponent},{path: 'sidenav', component: sidenavComponent},{path: '', redirectTo: 'home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

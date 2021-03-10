@@ -1,0 +1,19 @@
+<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Bar Chart">
+      <div fxFlex="100">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="false" chartType="bar"></canvas>
+      </div>
+    </mat-tab>
+    <mat-tab label="Line Chart">
+      <div fxFlex="100">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="false" chartType="line"></canvas>
+      </div>
+    </mat-tab>
+    <mat-tab label="Pie Chart">
+      <div fxFlex="100">
+        <canvas baseChart [datasets]="pieChartData" [labels]="pieChartLabels" [options]="pieChartOptions" chartType="pie"></canvas>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

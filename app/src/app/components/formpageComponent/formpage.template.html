@@ -1,0 +1,39 @@
+<div fxLayout="column wrap" style="margin-top:16px;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="loginform">
+        <div fxLayout="column wrap" fxLayoutGap="16px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput placeholder="Input" [required]="false" formControlName="username">
+            <mat-error align="start" *ngIf="loginform.controls.username.errors?.required">Fill the user name!</mat-error>
+            <mat-label>User Name</mat-label>
+          </mat-form-field>
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput type="password" placeholder="Input" [required]="false" formControlName="userpassword">
+            <mat-error align="start" *ngIf="loginform.controls.userpassword.errors?.required">Fill the password!</mat-error>
+            <mat-hint align="start" *ngIf="showhints">Create strong password</mat-hint>
+            <mat-label>Password</mat-label>
+          </mat-form-field>
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+            <input matInput placeholder="Input" [required]="false" [matAutocomplete]="auto" [formControl]="myControl">
+            <mat-label>Country</mat-label>
+            <mat-icon matSuffix>flag</mat-icon>
+          </mat-form-field>
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+          <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
+            <mat-select placeholder="Status" [required]="false">
+              <ng-template ngFor let-option [ngForOf]="statuses" let-i="index">
+                <mat-option [value]="option.value">{{option.value}}</mat-option>
+              </ng-template>
+            </mat-select>
+
+          </mat-form-field><button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

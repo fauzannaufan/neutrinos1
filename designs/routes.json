@@ -5,12 +5,20 @@
             "component": "simplepageComponent"
         },
         {
-            "path": "expansion",
-            "component": "expansionpageComponent"
+            "path": "form",
+            "component": "formpageComponent"
         },
         {
-            "path": "stepper",
-            "component": "stepperpageComponent"
+            "path": "table",
+            "component": "tablepageComponent"
+        },
+        {
+            "path": "chart",
+            "component": "chartpageComponent"
+        },
+        {
+            "path": "sidenav",
+            "component": "sidenavComponent"
         },
         {
             "path": "''",

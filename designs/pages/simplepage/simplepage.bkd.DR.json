@@ -247,7 +247,6 @@
                     "294054ee-0c44-c2a0-74a3-2c0d3041d71b": {
                         "paletteKey": "NG-ExpansionPanel",
                         "parentEditorKey": "53145bc3-59b5-f859-a17f-cba055a63dab",
-                        "isCommented": "false",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
@@ -332,7 +331,6 @@
                         "a518f351-f788-aefc-ad34-a94c3e75974c": {
                             "paletteKey": "NG-Form",
                             "parentEditorKey": "294054ee-0c44-c2a0-74a3-2c0d3041d71b",
-                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
@@ -387,7 +385,6 @@
                             "ef8bbc6a-152a-7403-d808-ebb50b435911": {
                                 "paletteKey": "FlexLayoutCol",
                                 "parentEditorKey": "a518f351-f788-aefc-ad34-a94c3e75974c",
-                                "isCommented": "false",
                                 "designerReference": [
                                     {
                                         "_key": "componentLabel",
@@ -455,7 +452,6 @@
                                     "paletteKey": "NG-Input",
                                     "parentEditorKey": "ef8bbc6a-152a-7403-d808-ebb50b435911",
                                     "isAdvancedComponent": true,
-                                    "isCommented": "false",
                                     "designerReference": [
                                         {
                                             "_key": "style",
@@ -624,7 +620,6 @@
                                     "paletteKey": "NG-Input",
                                     "parentEditorKey": "ef8bbc6a-152a-7403-d808-ebb50b435911",
                                     "isAdvancedComponent": true,
-                                    "isCommented": "false",
                                     "designerReference": [
                                         {
                                             "_key": "style",
@@ -793,7 +788,6 @@
                                     "paletteKey": "NG-Input",
                                     "parentEditorKey": "ef8bbc6a-152a-7403-d808-ebb50b435911",
                                     "isAdvancedComponent": true,
-                                    "isCommented": "false",
                                     "designerReference": [
                                         {
                                             "_key": "style",
@@ -963,7 +957,6 @@
                         "2f00df07-c0e5-f4ee-c9be-a92bd07fa319": {
                             "paletteKey": "NG-ExpansionPanelHeader",
                             "parentEditorKey": "294054ee-0c44-c2a0-74a3-2c0d3041d71b",
-                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
@@ -1000,7 +993,6 @@
                             "edafad8a-78d3-f979-cc80-05c76378beeb": {
                                 "paletteKey": "NG-ExpansionPanelTitle",
                                 "parentEditorKey": "2f00df07-c0e5-f4ee-c9be-a92bd07fa319",
-                                "isCommented": "false",
                                 "designerReference": [
                                     {
                                         "_key": "componentLabel",
@@ -1104,7 +1096,6 @@
                     "23a77635-3c49-895d-7ae2-da734f0be48e": {
                         "paletteKey": "NG-ExpansionPanel",
                         "parentEditorKey": "53145bc3-59b5-f859-a17f-cba055a63dab",
-                        "isCommented": "false",
                         "designerReference": [
                             {
                                 "_key": "componentLabel",
@@ -1189,7 +1180,6 @@
                         "3989e914-8348-8196-ab7f-267e1c8f0c72": {
                             "paletteKey": "NG-Form",
                             "parentEditorKey": "23a77635-3c49-895d-7ae2-da734f0be48e",
-                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
@@ -1244,7 +1234,6 @@
                             "fa3521ed-da26-efc8-8154-888afda93259": {
                                 "paletteKey": "FlexLayoutCol",
                                 "parentEditorKey": "3989e914-8348-8196-ab7f-267e1c8f0c72",
-                                "isCommented": "false",
                                 "designerReference": [
                                     {
                                         "_key": "componentLabel",
@@ -1312,7 +1301,6 @@
                                     "paletteKey": "NG-Input",
                                     "parentEditorKey": "fa3521ed-da26-efc8-8154-888afda93259",
                                     "isAdvancedComponent": true,
-                                    "isCommented": "false",
                                     "designerReference": [
                                         {
                                             "_key": "style",
@@ -1481,7 +1469,6 @@
                                     "paletteKey": "NG-Input",
                                     "parentEditorKey": "fa3521ed-da26-efc8-8154-888afda93259",
                                     "isAdvancedComponent": true,
-                                    "isCommented": "false",
                                     "designerReference": [
                                         {
                                             "_key": "style",
@@ -1650,7 +1637,6 @@
                                     "paletteKey": "NG-Input",
                                     "parentEditorKey": "fa3521ed-da26-efc8-8154-888afda93259",
                                     "isAdvancedComponent": true,
-                                    "isCommented": "false",
                                     "designerReference": [
                                         {
                                             "_key": "style",
@@ -1820,7 +1806,6 @@
                         "dc806bd7-875f-5a8a-93cb-a60ae5a8f44b": {
                             "paletteKey": "NG-ExpansionPanelHeader",
                             "parentEditorKey": "23a77635-3c49-895d-7ae2-da734f0be48e",
-                            "isCommented": "false",
                             "designerReference": [
                                 {
                                     "_key": "componentLabel",
@@ -1857,7 +1842,6 @@
                             "f9cdf24e-f30e-77dd-9d9a-12e3c2952dcd": {
                                 "paletteKey": "NG-ExpansionPanelTitle",
                                 "parentEditorKey": "dc806bd7-875f-5a8a-93cb-a60ae5a8f44b",
-                                "isCommented": "false",
                                 "designerReference": [
                                     {
                                         "_key": "componentLabel",
