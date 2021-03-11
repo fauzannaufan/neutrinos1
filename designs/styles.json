@@ -4,6 +4,11 @@
         "mat-form-field-appearance-legacy",
         "mat-form-field-can-float",
         "mat-form-field-should-float",
-        "mat-form-field-label"
+        "mat-form-field-label",
+        "responsivepage",
+        "menu",
+        "right",
+        "footer",
+        "content"
     ]
 }

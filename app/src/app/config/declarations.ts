@@ -15,6 +15,12 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-loginpageComponent
+import { loginpageComponent } from '../components/loginpageComponent/loginpage.component';
+//CORE_REFERENCE_IMPORT-responsivepageComponent
+import { responsivepageComponent } from '../components/responsivepageComponent/responsivepage.component';
+//CORE_REFERENCE_IMPORT-headerComponent
+import { headerComponent } from '../components/headerComponent/header.component';
 //CORE_REFERENCE_IMPORT-childpageComponent
 import { childpageComponent } from '../components/childpageComponent/childpage.component';
 //CORE_REFERENCE_IMPORT-expansionpageComponent
@@ -56,6 +62,12 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-loginpageComponent
+loginpageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-responsivepageComponent
+responsivepageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-headerComponent
+headerComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-childpageComponent
 childpageComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-expansionpageComponent
@@ -96,5 +108,5 @@ export const appProviders = [
 */
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
-export const appRoutes = [{path: 'home', component: simplepageComponent},{path: 'form', component: formpageComponent},{path: 'table', component: tablepageComponent},{path: 'chart', component: chartpageComponent},{path: 'sidenav', component: sidenavComponent},{path: '', redirectTo: 'home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
+export const appRoutes = [{path: 'home', component: simplepageComponent},{path: 'form', component: formpageComponent},{path: 'table', component: tablepageComponent},{path: 'chart', component: chartpageComponent},{path: 'sidenav', component: sidenavComponent},{path: 'responsive', component: responsivepageComponent},{path: 'login', component: loginpageComponent},{path: '', redirectTo: 'home', pathMatch: 'full'},{path: '**', component: PageNotFoundComponent}]
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_END

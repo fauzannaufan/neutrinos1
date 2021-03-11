@@ -21,6 +21,14 @@
             "component": "sidenavComponent"
         },
         {
+            "path": "responsive",
+            "component": "responsivepageComponent"
+        },
+        {
+            "path": "login",
+            "component": "loginpageComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "home",
             "pathMatch": "full",

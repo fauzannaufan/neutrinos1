@@ -1,3 +1,4 @@
+<bh-header></bh-header>
 <div fxLayout="column wrap" style="margin-top:16px;" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
   <mat-card>
     <mat-card-content>
@@ -24,6 +25,19 @@
               {{option}}
             </mat-option>
           </mat-autocomplete>
+          <mat-button-toggle-group [appearance]="&apos;standard&apos;">
+
+            <mat-button-toggle> Button Toggle
+            </mat-button-toggle>
+
+            <mat-button-toggle> Button Toggle
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+          <mat-list>
+            <mat-list-item *ngFor="let option of options">
+              <mat-checkbox color="primary" value="{{option}}" [required]="false">{{option}}</mat-checkbox>
+            </mat-list-item>
+          </mat-list>
           <mat-form-field [appearance]="&apos;legacy&apos;" [floatLabel]="&apos;auto&apos;">
             <mat-select placeholder="Status" [required]="false">
               <ng-template ngFor let-option [ngForOf]="statuses" let-i="index">
@@ -31,7 +45,7 @@
               </ng-template>
             </mat-select>
 
-          </mat-form-field><button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+          </mat-form-field><button mat-button mat-stroked-button>Button</button><button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
         </div>
       </form>
     </mat-card-content>

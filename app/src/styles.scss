@@ -10,3 +10,21 @@
 .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
     font-size: 16px;
 }
+
+// .responsivepage div {
+//     border: 1px solid black;
+//     border-collapse: collapse;
+// }
+
+.responsivepage .menu,
+.responsivepage .right {
+    background: pink;
+}
+
+.responsivepage .footer {
+    background: lightgrey;
+}
+
+.responsivepage .content {
+    min-height: 50vh;
+}

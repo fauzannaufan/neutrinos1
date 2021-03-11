@@ -1,0 +1,506 @@
+[
+    {
+        "id": "sd_8JuYmXGjymmwQs4L",
+        "type": "tab",
+        "createdDate": "2021-03-11T06:48:26.558Z",
+        "relativeParentPath": "",
+        "label": "sample",
+        "disabled": false,
+        "info": "",
+        "generateNext": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_fyFfDC3ymF81KQsi",
+        "type": "Start",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "myclientstart",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "username",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "userpassword",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [
+            {
+                "key": "userdetails",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "myclientstart",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 65,
+        "y": 40,
+        "wires": [
+            [
+                "sd_rxnpNYkDxMFCEM8d"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_R08U73uKXnxJwLeN",
+        "type": "Log",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "mylog",
+        "outputs": 0,
+        "logObject": "bh.local.userdetails",
+        "functionName": "mylog",
+        "category": "General",
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "bh.local",
+                "value": "userdetails",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "x": 365,
+        "y": 40,
+        "wires": [],
+        "generateNext": false,
+        "generated": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_rxnpNYkDxMFCEM8d",
+        "type": "Script",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "mystartscript",
+        "script": "bh.local.userdetails = bh.input.username + bh.input.userpassword;",
+        "functionName": "mystartscript",
+        "category": "Function",
+        "__n_excludedFromValidation__": {},
+        "x": 205,
+        "y": 40,
+        "wires": [
+            [
+                "sd_R08U73uKXnxJwLeN"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_uVUrhs8uFPKPEgAa",
+        "type": "Start",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "saveCredentials",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "id",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            },
+            {
+                "key": "name",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "accept_bh": false,
+        "functionName": "saveCredentials",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 80,
+        "y": 140,
+        "wires": [
+            [
+                "sd_GpSUFouX90qyxqaJ"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_GpSUFouX90qyxqaJ",
+        "type": "Storage",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "saveToStorage",
+        "operationType": "setItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "id"
+        },
+        "value": {
+            "type": "bh.input",
+            "value": "id"
+        },
+        "resultMapping": {},
+        "functionName": "saveToStorage",
+        "category": "Storage",
+        "__n_excludedFromValidation__": {},
+        "x": 200,
+        "y": 140,
+        "wires": [
+            [
+                "sd_2ZYt1EZGEpQ7IcLX"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_2ZYt1EZGEpQ7IcLX",
+        "type": "Storage",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "saveName",
+        "operationType": "setItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "name"
+        },
+        "value": {
+            "type": "bh.input",
+            "value": "name"
+        },
+        "resultMapping": {},
+        "functionName": "saveName",
+        "category": "Storage",
+        "__n_excludedFromValidation__": {},
+        "x": 360,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_pjOWsLk8XMizJJ4Y",
+        "type": "Start",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "getId",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "id",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "getId",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 80,
+        "y": 240,
+        "wires": [
+            [
+                "sd_cBgXSRFsSC5ft65R"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_eyVrhdPrGvjdI4Cc",
+        "type": "Start",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "getName",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "name",
+                "defaultValue": {
+                    "type": "str",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "getName",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 80,
+        "y": 340,
+        "wires": [
+            [
+                "sd_7NWngy7GICgey6V1"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_cBgXSRFsSC5ft65R",
+        "type": "Storage",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "getFromStorage1",
+        "operationType": "getItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "id"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "bh.local",
+            "value": "id"
+        },
+        "functionName": "getFromStorage1",
+        "category": "Storage",
+        "__n_excludedFromValidation__": {},
+        "x": 200,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_7NWngy7GICgey6V1",
+        "type": "Storage",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "getFromStorage2",
+        "operationType": "getItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "name"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "bh.local",
+            "value": "name"
+        },
+        "functionName": "getFromStorage2",
+        "category": "Storage",
+        "__n_excludedFromValidation__": {},
+        "x": 205,
+        "y": 340,
+        "wires": [
+            []
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_9FEzm8wFApha5qdj",
+        "type": "Catch",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "catcherror",
+        "selectedNodes": "all-nodes",
+        "selectCatchType": "allnodes",
+        "masternodeList": "",
+        "ignoreList": [
+            "sd_xP0Aysyn0UduDT7x"
+        ],
+        "functionName": "catcherror",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 500,
+        "y": 40,
+        "wires": [
+            [
+                "sd_xP0Aysyn0UduDT7x"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_xP0Aysyn0UduDT7x",
+        "type": "Log",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "bh.error",
+        "functionName": "sd_xP0Aysyn0UduDT7x",
+        "category": "General",
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "bh",
+                "value": "error",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "x": 600,
+        "y": 40,
+        "wires": [],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_q3oM9Pa6QGBbXozs",
+        "type": "Comments",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "comments": "<p>Get ID</p>",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 305,
+        "y": 240,
+        "wires": [],
+        "generateNext": true
+    },
+    {
+        "id": "sd_IHzZbWi7lWrPVUTJ",
+        "type": "HttpRequest",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "countryApi",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlValue": "https://restcountries.eu/rest/v2/name/indonesia",
+        "urlMappingObj": {},
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.country",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "country"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "countryApi",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 505,
+        "y": 280,
+        "wires": [
+            [
+                "sd_lR2iGhSJxNwkxhdq"
+            ]
+        ],
+        "generateNext": false,
+        "generated": true
+    },
+    {
+        "id": "sd_K3euuv1qzMDci2RU",
+        "type": "Start",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "getCountry",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [
+            {
+                "key": "country",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": true
+            }
+        ],
+        "accept_bh": false,
+        "functionName": "getCountry",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "sd_IHzZbWi7lWrPVUTJ"
+            ]
+        ],
+        "generateNext": true,
+        "serviceName": "sample"
+    },
+    {
+        "id": "sd_lR2iGhSJxNwkxhdq",
+        "type": "Log",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 0,
+        "logObject": "\"get country\"",
+        "functionName": "sd_lR2iGhSJxNwkxhdq",
+        "category": "General",
+        "__ssdTypeInputs__": {
+            "logObject": {
+                "type": "str",
+                "value": "get country",
+                "constant": false
+            }
+        },
+        "__n_excludedFromValidation__": {},
+        "x": 620,
+        "y": 280,
+        "wires": [],
+        "generateNext": false,
+        "generated": true
+    }
+]

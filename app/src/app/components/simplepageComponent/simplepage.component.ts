@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core'
 import { NBaseComponent } from '../../../../../app/baseClasses/nBase.component';
 import { localesService } from '../../../../baseClasses/localesService';
+import { sample } from '../../sd-services/sample';
 
 /*
 Client Service import Example:
@@ -25,7 +26,7 @@ export class simplepageComponent extends NBaseComponent implements OnInit {
     limit = 1000000;
     showMessage = false;
 
-    constructor() {
+    constructor(public clientservice:sample) {
         super();
     }
 
@@ -37,8 +38,14 @@ export class simplepageComponent extends NBaseComponent implements OnInit {
         
     }
 
+    async callservice() {
+        let result = await this.clientservice.myclientstart(this.price, this.amount);
+        console.log(result)
+    }
+
     respondToPrice(event) {
         //console.log(event);
+        this.callservice();
         if (event <= this.limit) {
             this.showMessage = false;
         } else {

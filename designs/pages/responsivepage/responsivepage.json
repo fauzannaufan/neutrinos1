@@ -1,0 +1,14 @@
+{
+    "appPageId": "b5028791-57b2-5b07-4331-5cef13fe6122",
+    "appPageName": "responsivepage",
+    "componentName": "responsivepageComponent",
+    "selectorName": "bh-responsivepage",
+    "htmlFileName": "responsivepage.template.html",
+    "tsFileName": "responsivepage.component.ts",
+    "createDate": "2021-03-11T06:14:44.448Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

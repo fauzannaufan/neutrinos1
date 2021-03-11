@@ -434,7 +434,9 @@
                     "_attrDef": "p",
                     "_complexity": "advanced",
                     "displayAs": "price",
-                    "attrType": "INPUT"
+                    "attrType": "INPUT",
+                    "inValid": false,
+                    "message": ""
                 },
                 {
                     "_key": "[amount]",
@@ -443,7 +445,9 @@
                     "_attrDef": "p",
                     "_complexity": "advanced",
                     "displayAs": "amount",
-                    "attrType": "INPUT"
+                    "attrType": "INPUT",
+                    "inValid": false,
+                    "message": ""
                 },
                 {
                     "_key": "(emitter)",
@@ -452,7 +456,9 @@
                     "_attrDef": "p",
                     "_complexity": "advanced",
                     "displayAs": "emitter",
-                    "attrType": "OUTPUT"
+                    "attrType": "OUTPUT",
+                    "inValid": false,
+                    "message": ""
                 }
             ]
         },

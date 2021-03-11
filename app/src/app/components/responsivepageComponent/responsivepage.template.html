@@ -1,0 +1,19 @@
+<div fxLayout="column wrap" class="responsivepage" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+  <bh-header></bh-header>
+  <div fxLayout="row " fxLayoutGap="16px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxShow.lt-md="false"><button mat-button>Menu</button></div>
+    <div fxLayout="column wrap" fxFlex="80" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxFlex.lt-md="100">
+      <div fxLayout="row " fxLayoutGap="16px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="column wrap" class="content" fxFlex="80" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button>Content</button>
+          <div>
+            <div>Country : {{countrydata?.name}}</div>
+            <div>Capital : {{countrydata?.capital}}</div>
+            <div>Currency : {{countrydata?.currencies[0].name}}</div>
+          </div>
+        </div>
+        <div fxLayout="column wrap" fxFlex="20" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><button mat-button>Right</button></div>
+      </div>
+      <footer class="footer"><button mat-button>Footer</button></footer>
+    </div>
+  </div>
+</div>
