@@ -1,0 +1,14 @@
+{
+    "appPageId": "920d76d6-1a8b-254a-1499-420a023ccb77",
+    "appPageName": "expansionpage",
+    "componentName": "expansionpageComponent",
+    "selectorName": "bh-expansionpage",
+    "htmlFileName": "expansionpage.template.html",
+    "tsFileName": "expansionpage.component.ts",
+    "createDate": "2021-03-10T06:33:19.464Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

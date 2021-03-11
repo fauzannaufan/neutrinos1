@@ -20,6 +20,11 @@ import { HeroService } from '../../services/hero/hero.service';
 
 export class simplepageComponent extends NBaseComponent implements OnInit {
 
+    price;
+    amount;
+    limit = 1000000;
+    showMessage = false;
+
     constructor() {
         super();
     }
@@ -28,15 +33,16 @@ export class simplepageComponent extends NBaseComponent implements OnInit {
 
     }
 
-    onSubmit() {
-        console.log('button clicked');
+    onClick() {
+        
     }
 
-    toggle() {
-        if (localesService.getLocalesInstance().defaultLcid !== 'en') {
-            localesService.getLocalesInstance().language = 'en';
+    respondToPrice(event) {
+        //console.log(event);
+        if (event <= this.limit) {
+            this.showMessage = false;
         } else {
-            localesService.getLocalesInstance().language = 'id';
+            this.showMessage = true;
         }
     }
 }

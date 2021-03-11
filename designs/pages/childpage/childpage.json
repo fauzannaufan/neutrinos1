@@ -1,0 +1,14 @@
+{
+    "appPageId": "28e31876-93ac-780b-715c-fcee91f37437",
+    "appPageName": "childpage",
+    "componentName": "childpageComponent",
+    "selectorName": "bh-childpage",
+    "htmlFileName": "childpage.template.html",
+    "tsFileName": "childpage.component.ts",
+    "createDate": "2021-03-10T09:12:47.219Z",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

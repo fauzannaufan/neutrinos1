@@ -15,6 +15,10 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-childpageComponent
+import { childpageComponent } from '../components/childpageComponent/childpage.component';
+//CORE_REFERENCE_IMPORT-expansionpageComponent
+import { expansionpageComponent } from '../components/expansionpageComponent/expansionpage.component';
 //CORE_REFERENCE_IMPORT-sidenavComponent
 import { sidenavComponent } from '../components/sidenavComponent/sidenav.component';
 //CORE_REFERENCE_IMPORT-chartpageComponent
@@ -52,6 +56,10 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-childpageComponent
+childpageComponent,
+//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-expansionpageComponent
+expansionpageComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-sidenavComponent
 sidenavComponent,
 //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-chartpageComponent
