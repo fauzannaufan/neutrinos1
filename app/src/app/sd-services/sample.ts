@@ -161,6 +161,26 @@ export class sample {
     }
   }
 
+  async pushgithub1(...others) {
+    try {
+      var bh = {
+        input: {},
+        local: {},
+      };
+      bh = this.sdService.__constructDefault(bh);
+      //appendnew_next_pushgithub1
+      return (
+        // formatting output variables
+        {
+          input: {},
+          local: {},
+        }
+      );
+    } catch (e) {
+      return await this.errorHandler(bh, e, 'sd_uevLfc3ZKn3yXoQ3');
+    }
+  }
+
   //appendnew_flow_sample_start
 
   async mystartscript(bh) {

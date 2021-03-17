@@ -9,6 +9,10 @@
         "menu",
         "right",
         "footer",
-        "content"
+        "content",
+        "profile",
+        "heading",
+        "blue-btn",
+        "mat-form-field-infix"
     ]
 }

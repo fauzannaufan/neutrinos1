@@ -3,6 +3,12 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "nDefaults.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: Open Sans;
+}
+
 .headerdesc {
     justify-content: space-between;
 }
@@ -27,4 +33,22 @@
 
 .responsivepage .content {
     min-height: 50vh;
+}
+
+.profile .heading {
+    color: lightgrey;
+}
+
+.profile > * {
+    color: black;
+}
+
+.profile .blue-btn {
+    background: blue;
+    color: white;
+}
+
+.profile .mat-form-field-infix {
+    width: auto;
+    min-width:60px;
 }

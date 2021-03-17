@@ -210,7 +210,8 @@
             []
         ],
         "generateNext": false,
-        "generated": true
+        "generated": true,
+        "serviceName": "sample"
     },
     {
         "id": "sd_pjOWsLk8XMizJJ4Y",
@@ -412,11 +413,15 @@
         "nodeType": "flow",
         "name": "countryApi",
         "method": "get",
+        "methodMapping": "",
         "methodMappingObj": {},
         "urlValue": "https://restcountries.eu/rest/v2/name/indonesia",
+        "urlMapping": "",
         "urlMappingObj": {},
         "ret": "json",
+        "retMapping": "",
         "retMappingObj": {},
+        "reqBody": "",
         "reqBodyObj": {
             "mapVarType": "bh",
             "mapVarValue": ""
@@ -428,9 +433,11 @@
         },
         "headers": {},
         "headersObj": [],
+        "headerMapping": "",
         "headerMappingObj": {},
         "params": {},
         "paramsObj": [],
+        "paramMapping": "",
         "paramMappingObj": {},
         "functionName": "countryApi",
         "category": "HTTP",
@@ -502,5 +509,67 @@
         "wires": [],
         "generateNext": false,
         "generated": true
+    },
+    {
+        "id": "sd_FhxmnN76ojFefwqZ",
+        "type": "CallSSDApi",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "client",
+        "nodeType": "flow",
+        "name": "pushgithub",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlValue": "/pushGithub",
+        "url": "/pushGithub",
+        "ret": "json",
+        "retMappingObj": {},
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": ""
+        },
+        "resultMapping": "bh.local.result",
+        "resultMappingObj": {
+            "mapVarType": "bh.local",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "inputVariables": [],
+        "inputParams": [],
+        "functionName": "pushgithub",
+        "category": "HTTP",
+        "__n_excludedFromValidation__": {},
+        "x": 205,
+        "y": 460,
+        "wires": [
+            []
+        ],
+        "generateNext": true
+    },
+    {
+        "id": "sd_uevLfc3ZKn3yXoQ3",
+        "type": "Start",
+        "z": "sd_8JuYmXGjymmwQs4L",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "pushgithub1",
+        "outputs": 1,
+        "inputVariables": [],
+        "localVariables": [],
+        "accept_bh": false,
+        "functionName": "pushgithub1",
+        "category": "General",
+        "__n_excludedFromValidation__": {},
+        "x": 80,
+        "y": 460,
+        "wires": [
+            []
+        ],
+        "generateNext": true,
+        "serviceName": "sample"
     }
 ]

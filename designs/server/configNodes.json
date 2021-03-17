@@ -1,4 +1,4 @@
-export default {
+{
     "db-config": {
         "sd_hylIX71XywtHbNqz": {
             "id": "sd_hylIX71XywtHbNqz",
@@ -8,10 +8,10 @@ export default {
             "dbOption": {
                 "name": "postgres_0",
                 "type": "postgres",
-                "host": process.env.dbHost,
+                "host": "__ssd__env__process.env.dbHost__ssd__env__end",
                 "port": 5432,
-                "username": process.env.dbUsername,
-                "password": process.env.dbPassword,
+                "username": "__ssd__env__process.env.dbUsername__ssd__env__end",
+                "password": "__ssd__env__process.env.dbPassword__ssd__env__end",
                 "database": "ima_noufan",
                 "schema": "public",
                 "uuidExtension": "",
@@ -106,10 +106,10 @@ export default {
             "mariadb_flags": "flags",
             "postgres_name": "postgres_0",
             "postgres_type": "postgres",
-            "postgres_host": process.env.dbHost,
+            "postgres_host": "__ssd__env__process.env.dbHost__ssd__env__end",
             "postgres_port": 5432,
-            "postgres_username": process.env.dbUsername,
-            "postgres_password": process.env.dbPassword,
+            "postgres_username": "__ssd__env__process.env.dbUsername__ssd__env__end",
+            "postgres_password": "__ssd__env__process.env.dbPassword__ssd__env__end",
             "postgres_database": "ima_noufan",
             "postgres_schema": "public",
             "postgres_uuidExtension": "",
